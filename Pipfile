@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = ">=1.1.1"
+redis = "*"
+pymysql = "*"
+gevent = "*"
+platformshconfig = "~=2.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
