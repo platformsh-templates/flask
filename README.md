@@ -50,6 +50,7 @@
 <a href="#customizations"><strong>Customizations</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <a href="#local-development"><strong>Local Development</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <a href="#learn"><strong>Learn</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="#blackfireio-creating-a-continuous-observability-strategy"><strong>Blackfire</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <a href="#contribute"><strong>Contribute</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <br />
 </p>
@@ -358,6 +359,44 @@ This template includes a starting [`.blackfire.yml`](.blackfire.yml) file that c
 -   [Testing Cookbooks](https://blackfire.io/docs/testing-cookbooks/index)
 -   [Using Builds](https://blackfire.io/docs/builds-cookbooks/index)
 -   [Configuring Integrations](https://blackfire.io/docs/integrations/index)
+
+#### Profiling a Flask application
+
+<p align="center" >
+<img src="Profile.png" width="1000px">
+</a>
+</p>
+
+As mentioned above, this template includes a starting `.blackfire.yaml` file that can be used to activate Blackfire. In other to run a simple profile on this application there following steps are to be carried out:
+
+-   Sign up for a [Blackfire](https://blackfire.io) account and follow the onboarding guide.
+    <br>
+-   Open a [tunnel](#local-development).
+    <br>
+-   Using your terminal, install Blackfire and all of it's dependencies using the instructions [here](https://blackfire.io/docs/up-and-running/installation).
+    <br>
+-   In your terminal, Export the flask application
+
+    ```bash
+    export FLASK_APP=server.py
+    ```
+
+-   Start the aplication server by running the following command:
+    ```bash
+    blackfire-python flask run
+    ```
+    <br>
+-   Go to `localhost:5000` or the port you've selected in your browser, with the [Blackfire Browser extension](https://blackfire.io/docs/integrations/browsers/index) click on "Profile"
+    <br>
+
+-   A new section at the top of your browser will be displayed to showcase the profiling in progress.
+    <br>
+    <img src="/ProfileBar.png" align="center" width="700px">
+    <br>
+
+-   After profiling is done, you can click on any of the buttons on that section to see more information about the application profiling results.
+    <br>
+-   Congratulations, you just profiled a Flask application with Blackfire.
 
 ### Resources
 
