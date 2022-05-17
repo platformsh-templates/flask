@@ -4,6 +4,10 @@ if [[ "$PACKAGE_MANAGER" = "poetry" ]]; then
 fi
 # Blackfire.
 export BLACKFIRE_AGENT_SOCKET="tcp://blackfire.platform.sh:8307"
+export BLACKFIRE_SERVER_ID="2e00ff1d-3afc-44b9-bc16-f85fb78a17df"
+export BLACKFIRE_SERVER_TOKEN="f88818231fa8d83ee05989115beb184e9795dd831c6dd2d200931486699e210f"
+export BLACKFIRE_CLIENT_TOKEN=957a7c14adc552005a0167bbb8dbf86b436dcaa356d8c19a1e818f7e2609967b
+export BLACKFIRE_CLIENT_ID=ee9cac7e-af83-4e86-be7b-148ee5f1cbfd
 # PostgreSQL.
 export DB_NAME=$(echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r ".database[0].path")
 export DB_HOST=$(echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r ".database[0].host")
