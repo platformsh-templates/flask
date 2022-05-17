@@ -49,15 +49,12 @@ hooks:
         fi
 
 web:
+    upstream:
+        socket_family: unix
+    # Commands are run once after deployment to start the application process.
     commands:
-        start: |
-            ############### PIPENV ###################
-            if [ "$PACKAGE_MANAGER" = "pipenv" ]; then
-                pipenv run python server.py
-            ############### POETRY ###################
-            elif [ "$PACKAGE_MANAGER" = "poetry" ]; then
-                poetry run python server.py
-            fi
+        # Replace "my_app.wsgi" by your actual WSGI script.
+        start: "blackfire-python gunicorn -w 4 -b unix:$SOCKET server.wsgi:application"
 
 # The size of the persistent disk of the application (in MB).
 disk: 1024
@@ -73,8 +70,7 @@ relationships:
 # The configuration of app when it is exposed to the web.
 
 source:
-  operations:
-    auto-update:
-      command: |
-        curl -fsS https://raw.githubusercontent.com/platformsh/source-operations/main/setup.sh | { bash /dev/fd/3 sop-autoupdate; } 3<&0
-    
+    operations:
+        auto-update:
+            command: |
+                curl -fsS https://raw.githubusercontent.com/platformsh/source-operations/main/setup.sh | { bash /dev/fd/3 sop-autoupdate; } 3<&0
