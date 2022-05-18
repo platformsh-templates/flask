@@ -40,8 +40,6 @@ hooks:
             # Install Poetry.
             POETRY_INSTALLER='https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py'
             curl -sSL $POETRY_INSTALLER | POETRY_VERSION=$POETRY_VERSION python -
-            # Add Poetry to .bash_profile, so it's available during SSH.
-            echo ". $PLATFORM_APP_DIR/.poetry/env" >> ~/.bash_profile
             # Check lockfile and install dependencies.
             poetry env use system
             poetry check
@@ -49,11 +47,9 @@ hooks:
         fi
 
 web:
-    upstream:
-        socket_family: unix
     # Commands are run once after deployment to start the application process.
     commands:
-        start: python server.py
+        start: blackfire-python server.py
 
 # The size of the persistent disk of the application (in MB).
 disk: 1024
