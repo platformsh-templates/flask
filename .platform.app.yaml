@@ -49,7 +49,7 @@ hooks:
 web:
     # Commands are run once after deployment to start the application process.
     commands:
-        start: blackfire-python server.py
+        start: blackfire-python flask run
 
 # The size of the persistent disk of the application (in MB).
 disk: 1024
