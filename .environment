@@ -1,7 +1,3 @@
-# Poetry.
-if [[ "$PACKAGE_MANAGER" = "poetry" ]]; then
-    . $PLATFORM_APP_DIR/.poetry/env
-fi
 # Blackfire.
 export BLACKFIRE_AGENT_SOCKET="tcp://blackfire.platform.sh:8307"
 export BLACKFIRE_SERVER_ID="2e00ff1d-3afc-44b9-bc16-f85fb78a17df"
