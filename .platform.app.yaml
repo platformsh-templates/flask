@@ -53,7 +53,7 @@ web:
         socket_family: unix
     # Commands are run once after deployment to start the application process.
     commands:
-        start: "python server.py"
+        start: python server.py
 
 # The size of the persistent disk of the application (in MB).
 disk: 1024
