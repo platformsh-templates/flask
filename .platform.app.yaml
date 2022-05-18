@@ -53,8 +53,7 @@ web:
         socket_family: unix
     # Commands are run once after deployment to start the application process.
     commands:
-        # Replace "my_app.wsgi" by your actual WSGI script.
-        start: "blackfire-python flask run"
+        start: "python server.py"
 
 # The size of the persistent disk of the application (in MB).
 disk: 1024
