@@ -367,7 +367,7 @@ This template includes a starting [`.blackfire.yml`](.blackfire.yml) file that c
 </a>
 </p>
 
-As mentioned above, this template includes a starting `.blackfire.yaml` file that can be used to activate Blackfire. In other to run a simple profile on this application there following steps are to be carried out:
+As mentioned above, this template includes a starting `.blackfire.yaml` file that can be used to activate Blackfire on a project. In other to run a simple profile on this application there following steps are to be carried out:
 
 -   Sign up for a [Blackfire](https://blackfire.io) account and follow the onboarding guide.
     <br>
