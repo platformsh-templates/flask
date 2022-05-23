@@ -15,4 +15,4 @@ scenarios: |
 
     scenario
         name "Anonymous Visit"
-        include homepages
+        include homepage
