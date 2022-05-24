@@ -14,5 +14,5 @@ scenarios: |
             expect status_code() == 200
 
     scenario
-        name "Anonymous Visit"
+        name "Visit Homepage"
         include homepage
