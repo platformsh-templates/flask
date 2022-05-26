@@ -9,7 +9,6 @@ redis = "*"
 pymysql = "*"
 gevent = "*"
 platformshconfig = "~=2.0"
-blackfire = "*"
 
 [dev-packages]
 
