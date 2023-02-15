@@ -23,6 +23,4 @@ export CACHE_HOST_REDIS=$(echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r
 export CACHE_PORT_REDIS=$(echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r ".rediscache[0].port")
 
 # Updates PATH when Poetry is used, making it available during deploys and SSH.
-if [ -n "$POETRY_VERSION" ]; then
-    export PATH="/app/.local/bin:$PATH"
-fi
+export PATH="/app/.local/bin:$PATH"

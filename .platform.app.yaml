@@ -24,6 +24,7 @@ hooks:
 
         # Install dependencies with Poetry.
         ./install-poetry.sh
+        export PATH="/app/.local/bin:$PATH"
         poetry install
 
 web:
@@ -49,4 +50,5 @@ source:
         auto-update:
             command: |
                 ./install-poetry.sh
+                export PATH="/app/.local/bin:$PATH"
                 curl -fsS https://raw.githubusercontent.com/platformsh/source-operations/main/setup.sh | { bash /dev/fd/3 sop-autoupdate; } 3<&0
