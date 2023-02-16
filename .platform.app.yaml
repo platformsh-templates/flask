@@ -19,9 +19,6 @@ hooks:
     build: |
         set -e
 
-        # Setup pip.
-        python3.9 -m pip install --upgrade pip
-
         # Install dependencies with Poetry.
         ./install-poetry.sh
         export PATH="/app/.local/bin:$PATH"

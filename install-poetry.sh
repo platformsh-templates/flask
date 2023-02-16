@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Upgrade pip
+python3.9 -m pip install --upgrade pip
+
 # Install poetry.
 export PIP_USER=false
 curl -sSL https://install.python-poetry.org | python3 - --version $POETRY_VERSION
