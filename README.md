@@ -68,7 +68,7 @@ Flask is a lightweight web microframework for Python.
 -   MariaDB 10.4
 -   Redis 5.0
 -   Automatic TLS certificates
--   Pipfile-based build
+-   Poetry-based build
 
 ## Getting Started
 
