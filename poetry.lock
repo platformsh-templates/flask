@@ -89,7 +89,7 @@ docs = ["sphinx"]
 
 [[package]]
 name = "importlib-metadata"
-version = "6.2.1"
+version = "6.3.0"
 description = "Read metadata from Python packages"
 category = "main"
 optional = false
@@ -419,8 +419,8 @@ greenlet = [
     {file = "greenlet-1.1.3.post0.tar.gz", hash = "sha256:f5e09dc5c6e1796969fd4b775ea1417d70e49a5df29aaa8e5d10675d9e11872c"},
 ]
 importlib-metadata = [
-    {file = "importlib_metadata-6.2.1-py3-none-any.whl", hash = "sha256:f65e478a7c2177bd19517a3a15dac094d253446d8690c5f3e71e735a04312374"},
-    {file = "importlib_metadata-6.2.1.tar.gz", hash = "sha256:5a66966b39ff1c14ef5b2d60c1d842b0141fefff0f4cc6365b4bc9446c652807"},
+    {file = "importlib_metadata-6.3.0-py3-none-any.whl", hash = "sha256:8f8bd2af397cf33bd344d35cfe7f489219b7d14fc79a3f854b75b8417e9226b0"},
+    {file = "importlib_metadata-6.3.0.tar.gz", hash = "sha256:23c2bcae4762dfb0bbe072d358faec24957901d75b6c4ab11172c0c982532402"},
 ]
 itsdangerous = [
     {file = "itsdangerous-2.1.2-py3-none-any.whl", hash = "sha256:2c2349112351b88699d8d4b6b075022c0808887cb7ad10069318a8b0bc88db44"},
