@@ -187,7 +187,7 @@ ocsp = ["cryptography (>=36.0.1)", "pyopenssl (==20.0.1)", "requests (>=2.26.0)"
 
 [[package]]
 name = "werkzeug"
-version = "2.3.0"
+version = "2.3.1"
 description = "The comprehensive WSGI web application library."
 category = "main"
 optional = false
@@ -512,8 +512,8 @@ redis = [
     {file = "redis-4.5.4.tar.gz", hash = "sha256:73ec35da4da267d6847e47f68730fdd5f62e2ca69e3ef5885c6a78a9374c3893"},
 ]
 werkzeug = [
-    {file = "Werkzeug-2.3.0-py3-none-any.whl", hash = "sha256:340335057f72974d9281dbaf52c8090a9f9a59ba304ae814bf0656e6559c0020"},
-    {file = "Werkzeug-2.3.0.tar.gz", hash = "sha256:3b6b46926d052b8ebca97c4dc73c12e47bdd07d57ab0600c039c3155450227bc"},
+    {file = "Werkzeug-2.3.1-py3-none-any.whl", hash = "sha256:69a4b8fcbb30a4c3fa81a5cebd961541273e4d222a4c08593b0b18312e14f64a"},
+    {file = "Werkzeug-2.3.1.tar.gz", hash = "sha256:2d35a28a75ae03727eae14ea7d13627c0f77aed6b9998441e6dae0b387f697fc"},
 ]
 zipp = [
     {file = "zipp-3.15.0-py3-none-any.whl", hash = "sha256:48904fc76a60e542af151aded95726c1a5c34ed43ab4134b597665c86d7ad556"},
