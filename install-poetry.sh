@@ -19,6 +19,6 @@ poetry env list
 
 # Check lockfile and environment.
 echo "Setting poetry to use system..."
-poetry env use system
+poetry env use 3.10
 echo "Running poetry check..."
 poetry check
