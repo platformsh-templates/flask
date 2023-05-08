@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Upgrade pip
-python3.9 -m pip install --upgrade pip
+python3.10 -m pip install --upgrade pip
 
 # Install poetry.
 export PIP_USER=false
