@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Upgrade pip
+echo "Upgrading pip..."
+python3.10 -m pip install --upgrade pip
+
 # Install poetry.
 export PIP_USER=false
 echo "Downloading and installing poetry..."
@@ -10,9 +14,8 @@ echo "Testing poetry..."
 poetry --version
 
 # Upgrade pip
-echo "Upgrading pip..."
-python3.10 -m pip install --upgrade pip
-# poetry run python -m pip install --upgrade pip
+echo "Upgrading pip within poetry..."
+poetry run python -m pip install --upgrade pip
 
 echo "Do we have any envs?"
 poetry env list
