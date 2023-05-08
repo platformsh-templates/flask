@@ -22,3 +22,5 @@ echo "Setting poetry to use system..."
 poetry env use 3.10
 echo "Running poetry check..."
 poetry check
+echo "Poetry config list:"
+poetry config --list

@@ -22,6 +22,8 @@ hooks:
         # Install dependencies with Poetry.
         ./install-poetry.sh
         export PATH="/app/.local/bin:$PATH"
+        echo "Python site?"
+        python3.10 -m site
         echo "Finally running poetry install"
         poetry install
 
