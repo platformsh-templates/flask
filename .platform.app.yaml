@@ -7,7 +7,7 @@
 name: flask
 
 # The runtime the application uses.
-type: "python:3.9"
+type: "python:3.10"
 
 variables:
     env:
