@@ -438,14 +438,14 @@ ocsp = ["cryptography (>=36.0.1)", "pyopenssl (==20.0.1)", "requests (>=2.26.0)"
 
 [[package]]
 name = "setuptools"
-version = "59.8.0"
+version = "59.2.0"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
 category = "main"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.6"
 files = [
-    {file = "setuptools-59.8.0-py3-none-any.whl", hash = "sha256:608a7885b664342ae9fafc43840b29d219c5a578876f6f7e00c4e2612160587f"},
-    {file = "setuptools-59.8.0.tar.gz", hash = "sha256:09980778aa734c3037a47997f28d6db5ab18bdf2af0e49f719bfc53967fd2e82"},
+    {file = "setuptools-59.2.0-py3-none-any.whl", hash = "sha256:4adde3d1e1c89bde1c643c64d89cdd94cbfd8c75252ee459d4500bccb9c7d05d"},
+    {file = "setuptools-59.2.0.tar.gz", hash = "sha256:157d21de9d055ab9e8ea3186d91e7f4f865e11f42deafa952d90842671fc2576"},
 ]
 
 [package.extras]
@@ -540,4 +540,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "9af8da1b68056e5f6666ef6d9c3ccc9147670c2524224be9834114e5c471e3b4"
+content-hash = "89afc35ce2c53aeb0bbf054f43943a42ca763a8248a14cb2590a1bd78d3f5f74"
