@@ -11,16 +11,11 @@ poetry --version
 
 # Upgrade pip
 echo "Upgrading pip..."
-python3.10 -m pip install --upgrade pip
-# poetry run python -m pip install --upgrade pip
-
-echo "Do we have any envs?"
-poetry env list
+# python3.10 -m pip install --upgrade pip
+poetry run python -m pip install --upgrade pip
 
 # Check lockfile and environment.
 echo "Setting poetry to use system..."
-poetry env use 3.10
+poetry env use system
 echo "Running poetry check..."
 poetry check
-echo "Poetry config list:"
-poetry config --list
