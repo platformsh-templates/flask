@@ -7,13 +7,13 @@
 name: flask
 
 # The runtime the application uses.
-type: "python:3.9"
+type: "python:3.10"
 
 variables:
     env:
-        POETRY_VERSION: 1.1.14
+        POETRY_VERSION: 1.4.2
         POETRY_VIRTUALENVS_IN_PROJECT: true
-        POETRY_VIRTUALENVS_CREATE: false
+        POETRY_VIRTUALENVS_CREATE: true
 
 hooks:
     build: |
