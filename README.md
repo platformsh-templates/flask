@@ -1,8 +1,9 @@
-<p align="right">
-<a href="https://platform.sh">
-<img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="150px">
-</a>
-</p>
+> [!WARNING]
+> **This repository is no longer maintained by our internal teams.**  
+> The template is provided *as is* and will not receive updates, bug fixes, or new features.  
+> You are welcome to contribute on it or fork the repository and modify it for your own use.
+> To deploy this template on [Upsun](https://www.upsun.com), you can use the command [upsun project:convert](https://docs.upsun.com/administration/cli/reference.html#projectconvert)
+> on this codebase to convert the existing `.platform.app.yaml` configuration file to the [Upsun Flex format](https://docs.upsun.com/create-apps/app-reference/single-runtime-image.html).
 
 <p align="center">
 <a href="https://flask.palletsprojects.com/en/2.1.x/">
@@ -33,10 +34,7 @@
 </a>&nbsp&nbsp
 <a href="https://github.com/pallets/flask/blob/main/LICENSE.rst">
 <img src="https://img.shields.io/static/v1?label=License&message=BSD3&style=for-the-badge&labelColor=f4f2f3&color=ffd9d9" alt="License" />
-</a>&nbsp&nbsp
-<br /><br />
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/flask/.platform.template.yaml&utm_content=flask&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform" target="_blank" title="Deploy with Platform.sh"><img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" width="175px"></a>
-</p>
+</a>
 </p>
 
 <hr>
@@ -75,16 +73,6 @@ Flask is a lightweight web microframework for Python.
 ### Deploy
 
 #### Quickstart
-
-The quickest way to deploy this template on Platform.sh is by clicking the button below.
-This will automatically create a new project and initialize the repository for you.
-
-<p align="center">
-    <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/flask/.platform.template.yaml&utm_content=flask&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
-        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="170px" />
-    </a>
-</p>
-<br/>
 
 #### Other deployment options
 
@@ -467,7 +455,7 @@ See something that's wrong with this template that needs to be fixed? Something 
 <strong>Need help?</strong>
 <br /><br />
 <a href="https://community.platform.sh"><strong>Ask the Platform.sh Community</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://chat.platform.sh"><strong>Join us on Slack</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="https://discord.gg/upsun"><strong>Join us on Discord</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <br />
 </p>
 <br />
